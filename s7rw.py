@@ -2,6 +2,27 @@ import struct
 import time
 import snap7
 
+'''
+area 参数取值：
+areas = ADict({
+
+'PE': 0x81, #input
+
+'PA': 0x82, #output
+
+'MK': 0x83, #bit memory
+
+'DB': 0x84, #DB
+
+'CT': 0x1C, #counters
+
+'TM': 0x1D, #Timers
+
+})
+
+V区用Client.db_write
+Client.db_read
+'''
 
 def plc_con_close(client):
     '''
